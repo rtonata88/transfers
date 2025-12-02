@@ -173,7 +173,7 @@ class extends Component {
                                 If you couldn't find the answer you were looking for, our support team is here to help you with any questions about the portal.
                             </p>
                             <a
-                                href="mailto:support@transferportal.gov.na"
+                                href="mailto:transfers@eightyseventen.com"
                                 class="group inline-flex items-center justify-center gap-2 px-6 py-3 bg-white text-zinc-900 rounded-full hover:bg-zinc-100 transition-all duration-300 font-semibold"
                             >
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

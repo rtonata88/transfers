@@ -57,7 +57,7 @@ class FaqSeeder extends Seeder
             ],
             [
                 'question' => 'How do I contact support?',
-                'answer' => 'For technical issues or questions about the portal, please email support@transferportal.gov.na. For questions about the transfer process itself, please contact your ministry\'s HR department.',
+                'answer' => 'For technical issues or questions about the portal, please email transfers@eightyseventen.com. For questions about the transfer process itself, please contact your ministry\'s HR department.',
                 'order' => 10,
             ],
         ];

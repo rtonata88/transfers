@@ -1,6 +1,5 @@
 <?php
 
-use App\Models\SiteSetting;
 use Livewire\Volt\Component;
 use Livewire\Attributes\Layout;
 use Livewire\Attributes\Title;
@@ -9,12 +8,6 @@ new
 #[Layout('components.layouts.guest')]
 #[Title('About - Employee Transfer Portal')]
 class extends Component {
-    public function with(): array
-    {
-        return [
-            'aboutContent' => SiteSetting::get('about_content', ''),
-        ];
-    }
 }; ?>
 
 <div class="bg-white dark:bg-zinc-900">
@@ -41,13 +34,6 @@ class extends Component {
     </section>
 
     <main class="pb-24">
-        @if($aboutContent)
-            <div class="max-w-3xl mx-auto px-4">
-                <div class="prose prose-lg prose-zinc dark:prose-invert max-w-none font-serif-headings">
-                    {!! $aboutContent !!}
-                </div>
-            </div>
-        @else
             <!-- Mission Section -->
             <section class="py-16 px-4">
                 <div class="max-w-6xl mx-auto">
@@ -244,9 +230,9 @@ class extends Component {
                             <div class="bg-zinc-50 dark:bg-zinc-800/50 rounded-2xl p-6 border border-zinc-100 dark:border-zinc-800">
                                 <h3 class="font-bold text-zinc-900 dark:text-white mb-3">Technical Support</h3>
                                 <p class="text-sm text-zinc-600 dark:text-zinc-400 mb-3">For technical issues with the platform</p>
-                                <a href="mailto:support@transferportal.gov.na" class="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:underline font-medium">
+                                <a href="mailto:transfers@eightyseventen.com" class="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:underline font-medium">
                                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-                                    support@transferportal.gov.na
+                                    transfers@eightyseventen.com
                                 </a>
                             </div>
 
@@ -289,6 +275,5 @@ class extends Component {
                     </div>
                 </div>
             </section>
-        @endif
     </main>
 </div>

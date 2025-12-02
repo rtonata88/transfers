@@ -20,7 +20,7 @@ class DatabaseSeeder extends Seeder
 
         // Create admin user
         User::firstOrCreate(
-            ['email' => 'admin@transferportal.gov.na'],
+            ['email' => 'transfers@eightyseventen.com'],
             [
                 'username' => 'admin',
                 'name' => 'System Administrator',
