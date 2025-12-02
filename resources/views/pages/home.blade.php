@@ -30,11 +30,12 @@ class extends Component {
             <div class="absolute top-0 left-1/4 w-96 h-96 bg-blue-400/20 dark:bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
             <div class="absolute bottom-1/4 right-1/4 w-80 h-80 bg-indigo-400/20 dark:bg-indigo-500/10 rounded-full blur-3xl animate-pulse" style="animation-delay: 1s;"></div>
             <div class="absolute top-1/3 right-1/3 w-64 h-64 bg-purple-400/10 dark:bg-purple-500/5 rounded-full blur-3xl animate-pulse" style="animation-delay: 2s;"></div>
+
         </div>
 
-        <div class="max-w-5xl mx-auto text-center relative z-10 py-20">
+        <div class="max-w-4xl mx-auto text-center relative z-10 py-20 px-4">
             <!-- Badge -->
-            <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-white/80 dark:bg-zinc-800/80 backdrop-blur-sm border border-zinc-200/50 dark:border-zinc-700/50 shadow-sm mb-10">
+            <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-white/80 dark:bg-zinc-800/80 backdrop-blur-sm border border-zinc-200/50 dark:border-zinc-700/50 shadow-sm mb-8">
                 <span class="relative flex h-2.5 w-2.5">
                     <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                     <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-green-500"></span>
@@ -43,7 +44,7 @@ class extends Component {
             </div>
 
             <!-- Main Heading -->
-            <h1 class="text-5xl sm:text-6xl lg:text-7xl font-serif font-bold text-zinc-900 dark:text-white mb-8 leading-[1.1] tracking-tight">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-serif font-bold text-zinc-900 dark:text-white mb-6 leading-[1.1] tracking-tight">
                 Find Your Perfect
                 <span class="block mt-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-600 dark:from-blue-400 dark:via-indigo-400 dark:to-blue-400">
                     Transfer Match
@@ -51,12 +52,12 @@ class extends Component {
             </h1>
 
             <!-- Subheading -->
-            <p class="text-lg sm:text-xl lg:text-2xl text-zinc-600 dark:text-zinc-400 mb-12 max-w-2xl mx-auto leading-relaxed font-light">
+            <p class="text-lg sm:text-xl text-zinc-600 dark:text-zinc-400 mb-10 max-w-2xl mx-auto leading-relaxed font-light">
                 Connect with colleagues for mutual transfers. You move to where they are, they move to where you are.
             </p>
 
             <!-- CTA Buttons -->
-            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-16">
+            <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
                 @auth
                     <a href="{{ route('dashboard') }}" class="group w-full sm:w-auto px-8 py-4 bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 rounded-full hover:bg-zinc-800 dark:hover:bg-zinc-100 hover:shadow-2xl hover:shadow-zinc-900/20 dark:hover:shadow-white/20 hover:-translate-y-1 transition-all duration-300 text-lg font-semibold inline-flex items-center justify-center gap-2">
                         Go to Dashboard
@@ -67,14 +68,14 @@ class extends Component {
                         Get Started Free
                         <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
                     </a>
-                    <a href="{{ route('login') }}" class="w-full sm:w-auto px-8 py-4 bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-900 dark:text-white rounded-full hover:bg-zinc-50 dark:hover:bg-zinc-700 hover:border-zinc-300 dark:hover:border-zinc-600 transition-all duration-300 text-lg font-semibold">
+                    <a href="{{ route('login') }}" class="w-full sm:w-auto px-8 py-4 bg-white dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700 text-zinc-900 dark:text-white rounded-full hover:bg-zinc-50 dark:hover:bg-zinc-700 hover:border-zinc-300 dark:hover:border-zinc-600 transition-all duration-300 text-lg font-semibold text-center">
                         Sign In
                     </a>
                 @endauth
             </div>
 
             <!-- Trust Indicators -->
-            <div class="flex flex-wrap items-center justify-center gap-x-8 gap-y-4 text-zinc-500 dark:text-zinc-500">
+            <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-3 text-zinc-500 dark:text-zinc-500">
                 <div class="flex items-center gap-2">
                     <div class="w-5 h-5 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center">
                         <svg class="w-3 h-3 text-green-600 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
@@ -97,7 +98,7 @@ class extends Component {
         </div>
 
         <!-- Scroll Indicator -->
-        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce hidden lg:block">
             <div class="w-6 h-10 rounded-full border-2 border-zinc-300 dark:border-zinc-700 flex items-start justify-center p-1">
                 <div class="w-1.5 h-2.5 bg-zinc-400 dark:bg-zinc-600 rounded-full animate-pulse"></div>
             </div>
